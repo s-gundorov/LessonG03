@@ -11,11 +11,11 @@ pygame.display.set_caption('ИГРА ТИР')
 icon1 = pygame.image.load("_hand.ico")
 pygame.display.set_icon(icon1)
 
-target = pygame.image.load("target.ico")
-target_width = 50
-target_height = 50
-target_x = SCREEN_WIDTH
-target_y = SCREEN_HEIGHT
+target = pygame.image.load("_target.png")
+target_width = 80
+target_height = 80
+target_x = random.randint(0, SCREEN_WIDTH-target_width)   #SCREEN_WIDTH / 2
+target_y = random.randint(0, SCREEN_HEIGHT-target_height)   #SCREEN_HEIGHT / 2
 
 
 running = True
